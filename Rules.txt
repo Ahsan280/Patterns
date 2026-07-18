@@ -1,0 +1,38 @@
+Two Pointer:
+Array, LinkedList
+Sorted or sorting can help
+Rearrange, remove duplicate or reverse or such in place without creating other arrays
+Merge Sorted arrays
+
+Sliding Window:
+IMPORTANT: SLIDING WINDOW DOES NOT WORK ON NEGATIVE NUMBERS
+Array, String --- Not on LinkedList
+SubArray or Subtring in question or you are understanding it such
+consective elements
+Are we finding something?
+Maximum, Minumim, Longest, Shortest, Sum, Count, Average, at most k, atleast k, exactly k
+
+Slow & Fast Pointer:
+Question me nikalna hai
+Cycle
+Loop
+Repeptivce behaviour
+Recurring something something
+middle of LinkedList
+
+Kadane's
+Given SubArray, contiguous
+either Minumim or Maximum sum, product
+start, ending or sum, frequency, product and array has negative numbers as well
+
+Prefix Sum
+Array/SubArray
+array[0] + array[1] + array[2] ..... + array[i]
+
+sum of subarrays
+sum of left/right ---> pivot/equilibrium ---> array
+
+sum of subarrays + negative numbers
+sum is equal to k or sum%k==0 ---> hashmap
+shortest window with sum >= k ---> Deque
+Range Sum ---> Merge Sort on prefix array

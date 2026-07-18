@@ -1,0 +1,10 @@
+2026-06-06 16:19:31,116 [INFO] Activator:176 - 
+
+
+2026-06-06 16:19:31,118 [INFO] Activator:177 - !SESSION log4j initialized
+2026-06-06 16:19:33,576 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-06-06 16:19:33,866 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Start the detection of the machine's architecture
+2026-06-06 16:19:33,876 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] use intel architecture
+2026-06-06 16:19:33,876 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] sysctl exited with code 1
+2026-06-06 16:19:33,877 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Architecture: Intel (x86_64)
+2026-06-06 18:22:52,335 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
