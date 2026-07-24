@@ -24,25 +24,20 @@ function intervalIntersection(firstList, secondList) {
   let right = 0;
   let result = [];
   while (left < firstList.length && right < secondList.length) {
-    let smaller = Math.min(firstList[left][0], secondList[right][0]);
-    if (smaller === firstList[left][0]) {
+    if (firstList[left][0] < secondList[right][0]) {
       if (firstList[left][1] >= secondList[right][0]) {
         result.push(intersect(firstList[left], secondList[right]));
       }
-      if (firstList[left][1] > secondList[right][1]) {
-        right++;
-      } else {
-        left++;
-      }
-    } else if (smaller === secondList[right][0]) {
+    } else {
       if (secondList[right][1] >= firstList[left][0]) {
         result.push(intersect(firstList[left], secondList[right]));
       }
-      if (firstList[left][1] > secondList[right][1]) {
-        right++;
-      } else {
-        left++;
-      }
+    }
+
+    if (firstList[left][1] > secondList[right][1]) {
+      right++;
+    } else {
+      left++;
     }
   }
   return result;
