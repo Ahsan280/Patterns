@@ -15,15 +15,7 @@ function minMeetingRooms(start, end) {
       right++;
     }
   }
-  while (left < start.length) {
-    rooms++;
-    max = Math.max(rooms, max);
-    left++;
-  }
-  while (right < end.length) {
-    rooms--;
-    right++;
-  }
+ 
   return max;
 }
 
