@@ -42,3 +42,22 @@ Merge Intervals
 Ranges / Intervals
 [start, end]
 Keywords ---> overlap, conflict, merge ranges, free time, simultaneous usage, rooms/loads/CPU/meetings
+
+Stack
+Items ---> array, string
+left to right check or see items or do something left to right
+most recent element ---> next greatest, previous smallest etc
+matching, cancelling, cleaning
+involving reverse
+
+There are 3 types of Stack
+Simple
+Monotonic (increasing or decreasing) somewhat sorted --> [2, 4, 6, 8] this is monotonically increasing
+Greedy ---> like monotonic but not number but condition from question
+
+Universal Template --> Stack
+
+[ I1, I2, I3, I4 ] left to right
+when to pop and what to pop?
+when to push?
+Store Result
