@@ -25,7 +25,7 @@ function previousGreater(nums) {
   return result;
 }
 
-function nextGreaterElements(nums) {
+function nextGreaterElementNormal(nums) {
   const stack = [nums[nums.length - 1]];
   const result = [-1];
   const map = { [nums[nums.length - 1]]: nums.length - 1 };
@@ -51,6 +51,26 @@ function nextGreaterElements(nums) {
 // const nums = [10, 4, 2, 20, 40, 12, 30];
 // const nums = [10, 20, 30, 40];
 // console.log(previousGreater(nums));
+
+function nextGreaterElements(nums) {
+  const stack = [];
+  const result = [];
+  for (let i = nums.length - 1; i >= 0; i--) {
+    stack.push(nums[i]);
+  }
+  for (let i = nums.length - 1; i >= 0; i--) {
+    while (stack[stack.length - 1] <= nums[i] && stack.length > 0) {
+      stack.pop();
+    }
+    if (stack.length === 0) {
+      result.push(-1);
+    } else {
+      result.push(stack[stack.length - 1]);
+    }
+    stack.push(nums[i]);
+  }
+  return result.reverse();
+}
 
 const nums = [1, 2, 3, 4, 3];
 console.log(nextGreaterElements(nums));
